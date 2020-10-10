@@ -83,9 +83,10 @@
 				return '';
 			}
 			if(count_sign % 8 == 0 && count_sign > 0) {
-				return ' ' + trigger.getAttribute('data-clipboard-text') + '[url=https://retrosmiles.github.io/retrosmiles][img]https://retrosmiles.github.io/retrosmiles/retro.gif[/img][/url]  ';
+				return '[url=https://retrosmiles.github.io/retrosmiles]' + trigger.getAttribute('data-clipboard-text') + '[/url]';
+				//return ' ' + trigger.getAttribute('data-clipboard-text') + '[url=https://retrosmiles.github.io/retrosmiles][img]https://retrosmiles.github.io/retrosmiles/retro.gif[/img][/url]  ';
 			} else {
-				return ' ' + trigger.getAttribute('data-clipboard-text') + ' ';
+				return trigger.getAttribute('data-clipboard-text');
 			}
 		}
 	});

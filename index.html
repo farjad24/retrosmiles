@@ -82,12 +82,12 @@
 			if(trigger.getAttribute('data-clipboard-text') == '' || trigger.getAttribute('data-clipboard-text') == null) {
 				return '';
 			}
-			if(count_sign % 8 == 0 && count_sign > 0) {
-				return '[url=https://retrosmiles.github.io/retrosmiles]' + trigger.getAttribute('data-clipboard-text') + '[/url]';
+			//if(count_sign % 8 == 0 && count_sign > 0) {
+				//return '[url=https://retrosmiles.github.io/retrosmiles]' + trigger.getAttribute('data-clipboard-text') + '[/url]';
 				//return ' ' + trigger.getAttribute('data-clipboard-text') + '[url=https://retrosmiles.github.io/retrosmiles][img]https://retrosmiles.github.io/retrosmiles/retro.gif[/img][/url]  ';
-			} else {
+			//} else {
 				return trigger.getAttribute('data-clipboard-text');
-			}
+			//}
 		}
 	});
 	clipboard.on('success', function(e) {
